@@ -3,7 +3,6 @@
 </div>
 
 <div align="center">
-
   <h1>👋 Hello! We are VisualTechStudio</h1>
   <p>我们的所有静态网站都在此处开源 并由Github托管</p>
 
@@ -30,5 +29,4 @@
   <img src="https://skillicons.dev/icons?i=visualstudio,vscode,androidstudio,vim,obsidian,ps,ai,github,gitlab,githubactions,docker,kubernetes,linux,nginx,cloudflare,wordpress,elasticsearch,mongodb,mysql,redis,kotlin,c,cpp,go,py,dotnet,html,css,bash,md&amp;theme=dark" alt="My Skills" />
 
   <br><br>
-
 </div>
