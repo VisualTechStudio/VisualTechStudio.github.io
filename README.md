@@ -1,10 +1,42 @@
 <div align="center">
-             <img src="./logo.png" />
-             <h1>VisualTechStudio Websites</h1>
-             我们的所有静态网站都在此处开源
-             <br>
-             <br>
-             <img src="https://img.shields.io/github/release/VisualTechStudio/ClearSight" />
-             <img src="https://img.shields.io/github/downloads/VisualTechStudio/ClearSight/total?color=white&style=plastic" />
-             <img src="https://img.shields.io/github/stars/VisualTechStudio/ClearSight" />
+  <img src="./logo.png" style="width: 200px; height: 200px;" />
+</div>
+
+<div align="center">
+
+# 👋 Hello! We are VisualTechStudio
+  我们的所有静态网站都在此处开源 并由Github托管
+
+<br>
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=CA47F7&center=&vCenter=&multiline=&repeat=&random=&width=435&lines=%E8%BF%BD%E6%B1%82%E6%BA%90%E4%BA%8E%E7%83%AD%E7%88%B1%EF%BC%8C%E6%9E%81%E8%87%B4%E6%88%90%E5%B0%B1%E6%A2%A6%E6%83%B3;Pursuit+comes+from+love%2C+and+the+ultimate+realisation+of+dreams.)](https://git.io/typing-svg)
+
+### 👥 Team Members
+<div align="center">
+  <img src="./ShayneHui.png" width="70" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./KL_Xydwg01.png" width="70" />
+  <br />
+  <strong>ShayneHui</strong>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>KL_Xydwg01</strong>
+</div>
+
+<br>
+
+### 👾 Our Skill Set
+![My Skills](https://skillicons.dev/icons?i=visualstudio,vscode,androidstudio,vim,obsidian,ps,ai,github,gitlab,githubactions,docker,kubernetes,linux,nginx,cloudflare,wordpress,elasticsearch,mongodb,mysql,redis,kotlin,c,cpp,go,py,dotnet,html,css,bash,md&theme=dark)
+
+<br>
+
+### 📦 Our Projects
+
+<a href="https://www.star-history.com/?repos=VisualTechStudio%2FVTStudioToolBox%2CVisualTechStudio%2FClearSight%2CVisualTechStudio%2FROG-B550-A-Gaming-OpenCore-EFI&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&type=date&legend=top-left" />
+ </picture>
+</a>
+
 </div>
