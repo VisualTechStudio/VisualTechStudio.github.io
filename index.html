@@ -23,6 +23,10 @@
       }
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background-color: var(--bg-color);
       color: var(--text-color);
@@ -30,6 +34,12 @@
       margin: 0;
       padding: 0;
       transition: background-color 0.3s, color 0.3s;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
     }
 
     .vts-subtext {
@@ -42,7 +52,9 @@
       padding: 0 20px;
     }
 
-    .vts-hero-section {
+    .vts-hero-section,
+    .vts-team-skill-section,
+    .vts-projects-section {
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -50,11 +62,6 @@
       align-items: center;
       text-align: center;
       box-sizing: border-box;
-    }
-
-    .vts-content-section {
-      padding: 60px 0;
-      text-align: center;
     }
 
     .vts-logo {
@@ -104,9 +111,20 @@
       color: var(--text-color);
     }
 
+    .vts-copy-btn:active {
+      background-color: #30363D;
+      animation: vts-fade 0.4s ease-in-out;
+    }
+
     .vts-copy-btn svg {
       width: 18px;
       height: 18px;
+    }
+
+    @keyframes vts-fade {
+      0% { opacity: 1; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1; }
     }
 
     .vts-chart {
@@ -121,7 +139,6 @@
   
   <section class="vts-hero-section">
     <img src="./logo.png" class="vts-logo" alt="Logo" />
-    
     <h1>👋 Hello! We are VisualTechStudio</h1>
     <p class="vts-subtext">我们的所有静态网站都在此处开源 并由Github托管</p>
     
@@ -135,7 +152,7 @@
     </div>
   </section>
 
-  <section class="vts-content-section">
+  <section class="vts-team-skill-section">
     <h3>👥 Team Members</h3>
     <div>
       <img src="./ShayneHui.png" width="70" alt="ShayneHui" />
@@ -151,9 +168,9 @@
 
     <h3>👾 Our Skill Set</h3>
     <img src="https://skillicons.dev/icons?i=visualstudio,vscode,androidstudio,vim,obsidian,ps,ai,github,gitlab,githubactions,docker,kubernetes,linux,nginx,cloudflare,wordpress,elasticsearch,mongodb,mysql,redis,kotlin,c,cpp,go,py,dotnet,html,css,bash,md&amp;theme=dark" alt="My Skills" />
+  </section>
 
-    <br><br>
-
+  <section class="vts-projects-section">
     <h3>📦 Our Projects</h3>
     <a href="https://www.star-history.com/?repos=VisualTechStudio%2FVTStudioToolBox%2CVisualTechStudio%2FClearSight%2CVisualTechStudio%2FROG-B550-A-Gaming-OpenCore-EFI&amp;type=date&amp;legend=top-left">
       <picture>
