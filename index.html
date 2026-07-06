@@ -9,6 +9,8 @@
       --bg-color: #ffffff;
       --text-color: #24292f;
       --sub-text-color: #57606a;
+      --code-bg: #f6f8fa;
+      --code-border: #d0d7de;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -16,6 +18,8 @@
         --bg-color: #0d1117;
         --text-color: #c9d1d9;
         --sub-text-color: #8b949e;
+        --code-bg: #161b22;
+        --code-border: #30363d;
       }
     }
 
@@ -24,7 +28,7 @@
       color: var(--text-color);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       margin: 0;
-      padding: 40px 20px;
+      padding: 0;
       transition: background-color 0.3s, color 0.3s;
     }
 
@@ -35,12 +39,65 @@
     .vts-container {
       max-width: 800px;
       margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .vts-hero-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .vts-content-section {
+      padding: 60px 0;
+      text-align: center;
     }
 
     .vts-logo {
       width: 200px;
       height: 200px;
-      border-radius: 24px;
+      border-radius: 40px;
+      margin-bottom: 20px;
+    }
+
+    .vts-code-wrapper {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--code-bg);
+      border: 1px solid var(--code-border);
+      border-radius: 6px;
+      padding: 8px 16px;
+      margin-top: 15px;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .vts-code-text {
+      font-family: ui-monospace, SFMono-Regular, SF Pro Mono, Liberation Mono, Menlo, monospace;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow-x: auto;
+      margin-right: 12px;
+    }
+
+    .vts-copy-btn {
+      background: none;
+      border: none;
+      color: var(--sub-text-color);
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .vts-copy-btn:hover {
+      background-color: var(--code-border);
+      color: var(--text-color);
     }
 
     .vts-chart {
@@ -51,35 +108,39 @@
 </head>
 <body>
 
-<div class="vts-container" align="center">
-  <div align="center">
-    <img src="./logo.png" class="vts-logo" />
-  </div>
+<div class="vts-container">
   
-  <br>
-
-  <div align="center">
+  <section class="vts-hero-section">
+    <img src="./logo.png" class="vts-logo" alt="Logo" />
+    
     <h1>👋 Hello! We are VisualTechStudio</h1>
     <p class="vts-subtext">我们的所有静态网站都在此处开源 并由Github托管</p>
+    
+    <div class="vts-code-wrapper">
+      <span class="vts-code-text" id="repo-url">https://github.com/VisualTechStudio/VisualTechStudio.github.io/</span>
+      <button class="vts-copy-btn" onclick="copyCode()">复制</button>
+    </div>
+  </section>
 
-    <br>
-
+  <section class="vts-content-section">
     <a href="https://git.io/typing-svg">
       <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;pause=1000&amp;color=CA47F7&amp;center=&amp;vCenter=&amp;multiline=&amp;repeat=&amp;random=&amp;width=435&amp;bg_color=00000000&amp;lines=%E8%BF%BD%E6%B1%82%E6%BA%90%E4%BA%8E%E7%83%AD%E7%88%B1%EF%BC%8C%E6%9E%81%E8%87%B4%E6%88%90%E5%B0%B1%E6%A2%A6%E6%83%B3;Pursuit+comes+from+love%2C+and+the+ultimate+realisation+of+dreams." alt="Typing SVG" />
     </a>
 
+    <br><br>
+
     <h3>👥 Team Members</h3>
-    <div align="center">
-      <img src="./ShayneHui.png" width="70" />
+    <div>
+      <img src="./ShayneHui.png" width="70" alt="ShayneHui" />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <img src="./KL_Xydwg01.png" width="70" />
+      <img src="./KL_Xydwg01.png" width="70" alt="KL_Xydwg01" />
       <br />
       <strong>ShayneHui</strong>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <strong>KL_Xydwg01</strong>
     </div>
 
-    <br>
+    <br><br>
 
     <h3>👾 Our Skill Set</h3>
     <img src="https://skillicons.dev/icons?i=visualstudio,vscode,androidstudio,vim,obsidian,ps,ai,github,gitlab,githubactions,docker,kubernetes,linux,nginx,cloudflare,wordpress,elasticsearch,mongodb,mysql,redis,kotlin,c,cpp,go,py,dotnet,html,css,bash,md&amp;theme=dark" alt="My Skills" />
@@ -94,10 +155,24 @@
         <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&amp;type=date&amp;legend=top-left" class="vts-chart" />
       </picture>
     </a>
+  </section>
 
-    <br><br>
-  </div>
 </div>
+
+<script>
+  function copyCode() {
+    const codeText = document.getElementById('repo-url').innerText;
+    navigator.clipboard.writeText(codeText).then(() => {
+      const btn = document.querySelector('.vts-copy-btn');
+      btn.innerText = '已复制!';
+      setTimeout(() => {
+        btn.innerText = '复制';
+      }, 2000);
+    }).catch(err => {
+      console.error('复制失败: ', err);
+    });
+  }
+</script>
 
 </body>
 </html>
