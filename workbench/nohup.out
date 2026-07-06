@@ -1,0 +1,24 @@
+
+> vtstudio-workbench@1.0.0 start
+> node server.js
+
+服务器正在运行在 http://localhost:3000
+npm ERR! path /www/wwwroot/workbench.vtstudio.space
+npm ERR! command failed
+npm ERR! signal SIGHUP
+npm ERR! command sh -c node server.js
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2025-11-18T12_22_36_652Z-debug-0.log
+
+> vtstudio-workbench@1.0.0 start
+> node server.js
+
+服务器正在运行在 http://localhost:3000
+npm ERR! path /www/wwwroot/workbench.vtstudio.space
+npm ERR! command failed
+npm ERR! signal SIGHUP
+npm ERR! command sh -c node server.js
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2025-11-18T12_37_26_664Z-debug-0.log

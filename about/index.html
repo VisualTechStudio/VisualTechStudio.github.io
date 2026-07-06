@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 浏览器标签上显示的网站标题 -->
+    <title>关于VTStudio</title>
+    <!-- 网站介绍 -->
+    <meta name="description" content="关于VTStudio">
+    <!-- 网站关键字 -->
+    <meta name="keywords" content="许晨阳,晨阳Shayne,VTStudio">
+    <!-- 浏览器标签上显示的图标 -->
+    <link rel="icon" type="image/ico" href="//sdn.geekzu.org/avatar/4cc893d113dd74ceca73f9863f2c5446/">
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css?v=1.2.0">
+    <link rel="stylesheet" href="./static/APlayer-1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
+    <!-- 自定义设置 -->
+    <style>
+        body {
+            /*背景图片URL 可使用随机图片API */
+            background-image: url("https://api.rls.ovh/adaptive");
+        }
+
+        .photo-bg {
+            /* 卡片左侧图片 */
+            background-image: url("#");
+        }
+
+        .kz-video {
+            /* 背景视频，none: 不显示 unset 显示 */
+            display: none; 
+        }
+    </style>
+    <script>
+        // 音乐设置
+        let meting_music_api = "https://www.kezez.com/api/meting-api/";// meting api
+        let music_server = "netease"; // 音乐服务：网易云 netease 参见 meting api支持的服务
+        let music_type = "playlist"; // 歌曲类型：歌单playlist 单首歌曲 song  专辑 album
+        let music_id = "7662174438"; // 歌单ID或歌曲ID或者专辑ID 20173709 29732992
+        let music_order = "random"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
+        let music_mini = false; // mini模式 吸底模式开启后此选项实效 true / false
+        let music_fixed = false; // 吸底模式
+        let music_volume = 0.7; // 默认音量
+        let music_autoplay = false; // 自动播放
+        let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
+
+        // 一言设置
+        let hitokoto_api = "https://v1.hitokoto.cn"; // 一言API
+    </script>
+    <!-- end 自定义设置 -->
+</head>
+
+<body>
+    <div class="kz-video">
+        <video src="./static/video/lty.mp4" autoplay="autoplay" loop muted playsinline="" webkit-playsinline=""></video>
+    </div>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <!-- 大标题 -->
+                <h1>About VTStudio </h1>
+                <!-- 标题下的一段话 -->
+                <p>
+                    VisualTechStudio
+                </p>
+                    
+                    KL_Xydwg01网易云收藏歌单：
+                    <div id="aplayer-inner" class="aplayer"></div>
+                    
+                <br>
+                    
+                <footer>
+                    <p id="hitokoto_text">一言获取中...</p>
+                    <a href="http://beian.miit.gov.cn/" target="_blank" ><i class="fab fa-#" aria-hidden="true">晋ICP备2025066205号</i></a>
+                    |
+                    推荐文章:
+                    <a href="https://www.vtstudio.space/%e5%b9%bb%e7%95%8c%e5%8a%a8%e5%8a%9b%e7%a7%91%e6%8a%80%e5%bc%80%e5%8f%91%e5%b7%a5%e4%bd%9c%e5%ae%a4%ef%bc%9a%e4%b9%9d%e5%b9%b4%e9%a3%8e%e9%9b%a8%ef%bc%8c%e5%88%9d%e5%bf%83%e6%9c%aa%e6%94%b9%e3%80%82/" target="_blank">九年风雨，初心未改</a>
+                <br>
+                    <p>Copyright 2016-2026 © VTStudio. All rights reserved <a href="https://vtstudio.space/" target="_blank">VTStudio </a>
+                    |
+                    VTStudio的其他站点：
+                    <a href="https://nav.vtstudio.space" target="_blank" ><i class="fab fa-#" aria-hidden="true"> Navi</i></a>
+                    |
+                    <a href="https://vtstudio.space" target="_blank" ><i class="fab fa-#" aria-hidden="true"> Blog</i></a>
+                    |
+                    <a href="http://cloud.vtstudio.space:5244" target="_blank" ><i class="fab fa-#" aria-hidden="true"> Cloud Repo</i></a>
+                    |
+                    <a href="https://mf.vtstudio.space" target="_blank" ><i class="fab fa-#" aria-hidden="true"> 魔方</i></a>
+                <br>
+                    VTStudio的所有站点遵守
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
+                    的非商业性网站
+                    |
+                    此页面基于来自Github
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">@kaygb</a>
+                    的开源项目
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">KZHomePage</a>
+                    |
+                    <a href="https://admin.vtstudio.space:2006">网站管理</a>
+                    <br>
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- aplayer -->
+    <div id="aplayer-fixed" class="aplayer"></div>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./static/APlayer-1.10.1/dist/APlayer.min.js"></script>
+    <script src="./static/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./static/layer-v3.5.1/layer/layer.js"></script>
+
+    <script src="./static/main.js"></script>
+
+</html>

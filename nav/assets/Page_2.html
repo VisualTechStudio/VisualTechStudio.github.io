@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link href="./css/nes.min.css" rel="stylesheet">
+  <title>VisualTechStudio 导航页</title>  <style>
+    .back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+    }
+    
+    body {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      transition: background-image 0.5s ease-in-out;
+    }
+    
+    .center-text {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<script>
+  function setRandomBackground() {
+    const timestamp = new Date().getTime();
+    document.body.style.backgroundImage = `url('https://t.alcy.cc/moez?t=${timestamp}')`;
+  }
+  
+  window.addEventListener('load', setRandomBackground);
+</script>
+
+<header class="sticky">
+  <div class="container">
+    <div class="nav-brand">
+      <br> 
+      <h1 class="center-text">VisualTechStudio 导航页</h1>
+    </div> 
+    <div class="social-buttons">
+    </div>
+  </div>
+</header>
+
+</br>
+
+<div class="nes-container is-rounded">
+  <p>
+    <h1> VTS Cloud Repo 
+      <a href="https://cloud.vtstudio.space:5244/" style="margin-left: 20px">
+        <button type="button" class="nes-btn is-success" style="padding: 5px 10px; font-size: 14px;">点击跳转</button>
+      </a>
+    </h1>
+    </br>
+    114514
+  </p>
+</div>
+
+<div class="nes-container is-rounded">
+  <p class="title center-text">备案</p>
+  <a href="https://beiancx.miit.gov.cn/">
+    <center>晋ICP备2025066205号</center>
+  </a>
+</div>
+
+<div class="nes-container is-rounded">
+  <p class="title center-text">版权</p>
+  <a href="https://VTStudio.Space">
+    <center>Copyright 2016-2025 © VTStudio. All rights reserved | Designed by Notes 2021 | Updated by KL_Xydwg01 2025 | 抄袭GoldenApples的CSS和JS(滑稽)</center>
+  </a>
+</div>
+
+  <div class="nes-container is-rounded">
+    <p class="title">声明</p>
+    <p>本网站是遵守<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>的非商业性网站
+    <br>CSS框架:<a href="https://github.com/nostalgic-css/NES.css">NES.CSS</a> | 背景API:<a href="https://t.alcy.cc/">次元API-举个栗子</a>
+  </div>
+
+<div class="js-back-to-top back-to-top">
+  <button type="button" class="nes-btn is-error">∧</button>
+</div>
+
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+<script>
+  $(function() {
+    var $win = $(window);
+    var $backToTop = $('.js-back-to-top');
+    $win.scroll(function() {
+      if ($win.scrollTop() > 100) {
+        $backToTop.show();
+      } else {
+        $backToTop.hide();
+      }
+    });
+    $backToTop.click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 200);
+    });
+  });
+</script>
+</body>
+</html>
