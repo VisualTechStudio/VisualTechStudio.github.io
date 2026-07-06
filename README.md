@@ -4,39 +4,41 @@
 
 <div align="center">
 
-# 👋 Hello! We are VisualTechStudio
-  我们的所有静态网站都在此处开源 并由Github托管
+  <h1>👋 Hello! We are VisualTechStudio</h1>
+  <p>我们的所有静态网站都在此处开源 并由Github托管</p>
 
-<br>
+  <br>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=CA47F7&center=&vCenter=&multiline=&repeat=&random=&width=435&lines=%E8%BF%BD%E6%B1%82%E6%BA%90%E4%BA%8E%E7%83%AD%E7%88%B1%EF%BC%8C%E6%9E%81%E8%87%B4%E6%88%90%E5%B0%B1%E6%A2%A6%E6%83%B3;Pursuit+comes+from+love%2C+and+the+ultimate+realisation+of+dreams.)](https://git.io/typing-svg)
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;pause=1000&amp;color=CA47F7&amp;center=&amp;vCenter=&amp;multiline=&amp;repeat=&amp;random=&amp;width=435&amp;lines=%E8%BF%BD%E6%B1%82%E6%BA%90%E4%BA%8E%E7%83%AD%E7%88%B1%EF%BC%8C%E6%9E%81%E8%87%B4%E6%88%90%E5%B0%B1%E6%A2%A6%E6%83%B3;Pursuit+comes+from+love%2C+and+the+ultimate+realisation+of+dreams." alt="Typing SVG" />
+  </a>
 
-### 👥 Team Members
-<div align="center">
-  <img src="./ShayneHui.png" width="70" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./KL_Xydwg01.png" width="70" />
-  <br />
-  <strong>ShayneHui</strong>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <strong>KL_Xydwg01</strong>
-</div>
+  <h3>👥 Team Members</h3>
+  <div align="center">
+    <img src="./ShayneHui.png" width="70" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./KL_Xydwg01.png" width="70" />
+    <br />
+    <strong>ShayneHui</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong>KL_Xydwg01</strong>
+  </div>
 
-<br>
+  <br>
 
-### 👾 Our Skill Set
-![My Skills](https://skillicons.dev/icons?i=visualstudio,vscode,androidstudio,vim,obsidian,ps,ai,github,gitlab,githubactions,docker,kubernetes,linux,nginx,cloudflare,wordpress,elasticsearch,mongodb,mysql,redis,kotlin,c,cpp,go,py,dotnet,html,css,bash,md&theme=dark)
+  <h3>👾 Our Skill Set</h3>
+  <img src="https://skillicons.dev/icons?i=visualstudio,vscode,androidstudio,vim,obsidian,ps,ai,github,gitlab,githubactions,docker,kubernetes,linux,nginx,cloudflare,wordpress,elasticsearch,mongodb,mysql,redis,kotlin,c,cpp,go,py,dotnet,html,css,bash,md&amp;theme=dark" alt="My Skills" />
 
-<br>
+  <br><br>
 
-### 📦 Our Projects
+  <h3>📦 Our Projects</h3>
 
-<a href="https://www.star-history.com/?repos=VisualTechStudio%2FVTStudioToolBox%2CVisualTechStudio%2FClearSight%2CVisualTechStudio%2FROG-B550-A-Gaming-OpenCore-EFI&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&type=date&legend=top-left" />
- </picture>
-</a>
+  <a href="https://www.star-history.com/?repos=VisualTechStudio%2FVTStudioToolBox%2CVisualTechStudio%2FClearSight%2CVisualTechStudio%2FROG-B550-A-Gaming-OpenCore-EFI&amp;type=date&amp;legend=top-left">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&amp;type=date&amp;theme=dark&amp;legend=top-left" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&amp;type=date&amp;legend=top-left" />
+      <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=VisualTechStudio/VTStudioToolBox%2CVisualTechStudio/ClearSight%2CVisualTechStudio/ROG-B550-A-Gaming-OpenCore-EFI&amp;type=date&amp;legend=top-left" />
+    </picture>
+  </a>
 
 </div>
